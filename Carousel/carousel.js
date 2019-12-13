@@ -14,10 +14,13 @@ const setInitialClasses = () => {
 // add event listeners
 
 const setEventListeners = () => {
-    const prev = document.querySelector('carousel_button_prev')''
+    const prev = document.querySelector('carousel_button_prev');
     const next = document.querySelector('carousel_button_next');
 
     prev.addEventListener('click', moveNext);
     next.addEventListener('click', movePrev);
 }
+
+//previous and next navigation handler functions
+
 
