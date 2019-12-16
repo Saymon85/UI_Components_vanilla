@@ -1,6 +1,6 @@
 const items = document.querySelectorAll('.carousel_photo');
 const totalItems = items.length;
-const slide = 0;
+let slide = 0;
 let moving = true;
 
 //set initial classes
@@ -23,4 +23,38 @@ const setEventListeners = () => {
 
 //previous and next navigation handler functions
 
+
+const moveNext = () => {
+
+    if(!moving){
+        if(slide === (totalItems - 1)){
+            slide = 0;
+        }else{
+            slide++
+        }
+    }
+    moveCarousel(slide);
+}
+
+const movePrev = () => {
+    if(!moving){
+        if(slide === 0){
+            slide = totalItems - 1;
+        }else{
+            slide--;
+        }
+    }
+    moveCarousel(sldie);
+}
+
+// disable intercation when slides rotate
+
+const disableInteraction = () => {
+
+    moving = true;
+
+    setTimeout(() => {
+        moving = false;
+    }, 500);
+}
 
