@@ -1,9 +1,9 @@
 const openBtn = document.querySelector('.open-btn');
 const closeBtn = document.querySelector('.close-btn');
 const overlay = document.querySelector('.overlay');
+const modal = document.getElementById('modal');
 
 openBtn.addEventListener('click', () => {
-    const modal = document.getElementById('modal');
     modal.classList.add('active');
     overlay.classList.add('active');
 })
@@ -14,7 +14,6 @@ closeBtn.addEventListener('click', () => {
 })
 
 overlay.addEventListener('click', () => {
-    const modal = document.getElementById('modal');
     modal.classList.remove('active');
     overlay.classList.remove('active');
 })
