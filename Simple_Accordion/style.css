@@ -1,0 +1,36 @@
+.wrapper{
+    width: 60%;
+    margin: 0 auto;
+    height: 300px;
+    transition: display ease-in-out 500ms;
+}
+
+.wrapper div{
+    margin:0;
+}
+
+h4, p{
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 0;
+    text-align: center;
+}
+
+h4{
+    background-color: silver;
+    height: 25%;
+}
+
+h4:hover{
+    cursor: pointer;
+}
+
+p{
+    height: 75%;
+    padding: 6px 0px;
+}
+
+.hide{
+    display: none;
+}
